@@ -1,0 +1,26 @@
+{
+  "name": "student-teacher",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredsonchaves07/student-teacher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredsonchaves07/student-teacher/issues"
+  },
+  "homepage": "https://github.com/fredsonchaves07/student-teacher#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
