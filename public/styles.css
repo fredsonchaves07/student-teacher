@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+:root{
+    --primary-color: #4B0082
+}
 
 *{
     margin: 0;
@@ -7,7 +10,57 @@
 }
 
 body{
-    background-color: black;
-    color: wheat;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color)
 }
+
+header{
+    background-color: white;
+    padding: 32px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+.links a + a{
+    margin-right: 0;
+}
+
+.links a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.links a:hover{
+    color: var(--primary-color);
+}
+
+.links a::after{
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: var(--primary-color);
+    height: 2px;
+}
+
+.links a:hover:after{
+    width: 100%;
+    transition: width 200ms ease-in-out 300ms;
+}
+
+
+
+
+
