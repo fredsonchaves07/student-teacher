@@ -1,0 +1,13 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://www.facebook.com",
+      "name": "CARLOS ROCHA",
+      "birth": "1987-01-29",
+      "specialty": "medio",
+      "type": "presencial",
+      "acom": "PROGRAMAÇÃO"
+    }
+  ]
+}
