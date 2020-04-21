@@ -10,6 +10,7 @@ nunjucks.configure('views', {
     express: server
 })
 
+server.use(express.urlencoded({extended: true}))
 server.use(express.static('public'))
 server.use(routes)
 
