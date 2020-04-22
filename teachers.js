@@ -15,6 +15,7 @@ exports.post = (function(req, res){
     let {avatar_url, name, birth, specialty, type, acom} = req.body
 
     const id = Number(data.teachers.length + 1)
+    const created_at = new Date()
 
     data.teachers.push({
         id,
@@ -23,14 +24,15 @@ exports.post = (function(req, res){
         birth,
         specialty,
         type,
-        acom
+        acom,
+        created_at
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
         if(err){
             return res.send('Write file error!')
         }
-
+        console.log(data.teachers)
         return res.redirect('/teachers')
     })
 })
