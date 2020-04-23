@@ -55,8 +55,8 @@ exports.show = function(req, res){
         ...foundTeachers,
         age: utils.age(foundTeachers.birth),
         graduation: utils.graduation(foundTeachers.specialty),
-        acom: foundTeachers.specialty.split(',')
-        created_at: 
+        acom: foundTeachers.specialty.split(','),
+        created_at: new Intl.DateTimeFormat('pt-BR')
     }
 }
 //delete
