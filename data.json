@@ -3,20 +3,12 @@
     {
       "id": 1,
       "avatar_url": "http://www.facebook.com",
-      "name": "CARLA VIERIA",
-      "birth": "1987-01-29",
-      "specialty": "medio",
+      "name": "FERNANDO MAIA",
+      "birth": "1978-04-06T00:00:00.000Z",
+      "specialty": "mestrado",
       "type": "presencial",
-      "acom": "MATEMÁTICA"
-    },
-    {
-      "id": 2,
-      "avatar_url": "http://www.facebook.com",
-      "name": "MARIA ROBERTO",
-      "birth": "1967-12-01",
-      "specialty": "medio",
-      "type": "presencial",
-      "acom": "PORTUGUES"
+      "acom": "PROGRAMAÇÃO",
+      "created_at": "2020-04-23T12:02:23.897Z"
     }
   ]
 }
