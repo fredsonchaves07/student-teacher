@@ -34,7 +34,6 @@ exports.post = (function(req, res){
         if(err){
             return res.send('Write file error!')
         }
-        console.log(data.teachers)
         return res.redirect('/teachers')
     })
 })
@@ -51,12 +50,19 @@ exports.show = function(req, res){
         return res.send('Teacher not found!')
     }
 
-    const teachers = {
+    const teacher = {
         ...foundTeachers,
         age: utils.age(foundTeachers.birth),
         graduation: utils.graduation(foundTeachers.specialty),
-        acom: foundTeachers.specialty.split(','),
-        created_at: new Intl.DateTimeFormat('pt-BR')
+        acom: foundTeachers.acom.split(','),
     }
+
+    let teste = new Date('2019-12-12');
+    console.log(new Intl.DateTimeFormat('pt-BR', {timeZone: 'UTC'}).format(teste));
+ 
+    let formatter = new Intl.DateTimeFormat('pt')
+    console.log(formatter.format(Date.now()))
+
+    return res.render('teachers/show', {teacher})
 }
 //delete

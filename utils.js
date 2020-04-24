@@ -1,5 +1,6 @@
 exports.age = function(birth){
     data = new Date()
+    birth = new Date(birth)
 
     diff = Math.abs(data.getTime() - birth.getTime())
     age = Math.ceil(diff / (1000 * 3600 * 24 * 30.5 * 12)) - 1
@@ -7,6 +8,8 @@ exports.age = function(birth){
     if(data.getDate() >= (birth.getDate() + 1) && (data.getMonth() + 1) == (birth.getMonth() + 1)){
         age += 1
     }
+
+    return age
 }
 
 exports.graduation = function(specialty){
