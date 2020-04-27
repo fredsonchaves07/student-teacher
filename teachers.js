@@ -56,8 +56,9 @@ exports.show = function(req, res){
         age: utils.age(foundTeachers.birth),
         graduation: utils.graduation(foundTeachers.specialty),
         acom: foundTeachers.acom.split(','),
-        created_at: Intl.DateTimeFormat('pt-BR').format(foundTeachers.created_at)
+        created_at: Intl.DateTimeFormat('pt-BR').format(new Date(foundTeachers.created_at))
     }
+
     return res.render('teachers/show', {teacher})
 }
 //delete
