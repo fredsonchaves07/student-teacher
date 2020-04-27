@@ -1,6 +1,7 @@
 const fs = require('fs')
 const data = require('./data.json')
 const utils = require('./utils.js')
+const Intl = require('intl')
 
 //create
 exports.post = (function(req, res){
@@ -55,14 +56,8 @@ exports.show = function(req, res){
         age: utils.age(foundTeachers.birth),
         graduation: utils.graduation(foundTeachers.specialty),
         acom: foundTeachers.acom.split(','),
+        created_at: Intl.DateTimeFormat('pt-BR').format(foundTeachers.created_at)
     }
-
-    let teste = new Date('2019-12-12');
-    console.log(new Intl.DateTimeFormat('pt-BR', {timeZone: 'UTC'}).format(teste));
- 
-    let formatter = new Intl.DateTimeFormat('pt')
-    console.log(formatter.format(Date.now()))
-
     return res.render('teachers/show', {teacher})
 }
 //delete
