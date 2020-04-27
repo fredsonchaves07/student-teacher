@@ -157,7 +157,7 @@ input::placeholder{
     font-size: 14px;
 }
 
-button[type="submit"]{
+.button, button[type="submit"]{
     text-align: center;
     width: 100%;
     font-weight: bold;
@@ -167,6 +167,12 @@ button[type="submit"]{
     color: white;
     font-size: 14px;
     margin-top: 4px;
+    box-sizing: border-box;
+}
+
+.button{
+    text-decoration: none;
+    display: inline-block;
 }
 
 
