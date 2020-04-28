@@ -23,3 +23,7 @@ exports.graduation = function(specialty){
         return 'Doutorado'
     }
 }
+
+exports.formatDate = function(date){
+    return date.split('/').reverse().join('-')
+}

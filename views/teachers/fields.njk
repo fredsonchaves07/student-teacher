@@ -1,19 +1,30 @@
             <div class="item">
                 <div>Avatar url:</div>
                 <div>
-                    <input type="url" name="avatar_url" id="" placeholder="http://">
+                    <input type="url" 
+                           name="avatar_url" 
+                           id="" 
+                           placeholder="http://"
+                           value="{{teacher.avatar_url}}">
                 </div>
             </div>
             <div class="item">
                 <div>Nome:</div>
                 <div>
-                    <input type="text" name="name" id="" placeholder="Digite o seu nome">
+                    <input type="text" 
+                           name="name" 
+                           id="" 
+                           placeholder="Digite o seu nome"
+                           value="{{teacher.name}}">
                 </div>
             </div>
             <div class="item">
                 <div>Data de Nascimento:</div>
                 <div>
-                    <input type="date" name="birth" id="">
+                    <input type="date" 
+                           name="birth" 
+                           id=""
+                           value="{{teacher.birth}}">
                 </div>
             </div>
             <div class="item">
@@ -30,13 +41,35 @@
             <div class="item">
                 <div>Tipo de aula:</div>
                 <div>
-                    <span><input type="radio" name="type" id="" value="presencial">Presencial</span>
-                    <span><input type="radio" name="type" id="" value="distancia">À distancia</span>
+                    <span>
+                        <input type="radio" 
+                               name="type" 
+                               id="" 
+                               value="presencial" 
+                               {% if teacher.type ==  'presencial'%}
+                                   checked
+                               {% endif %}
+                               >Presencial
+                    </span>
+                    <span>
+                        <input type="radio" 
+                               name="type" 
+                               id="" 
+                               value="distancia"
+                               {% if teacher.type == 'distancia' %}
+                                   checked
+                               {% endif %}
+                               >À distancia
+                        </span>
                 </div>
             </div>
             <div class="item">
                 <div>Acompanhamento:</div>
                 <div>
-                    <input type="text" name="acom" id="" placeholder="Separe por virgulas">
+                    <input type="text" 
+                           name="acom" 
+                           id="" 
+                           placeholder="Separe por virgulas"
+                           value="{{teacher.acom}}">
                 </div>
             </div> 
