@@ -3,13 +3,14 @@
     <title>Edit Teachers</title>
 {% endblock %}
 {% block content %}
-    <form class="card" action="/teachers" method="post" >
+    <form class="card" action="/teachers?_method=PUT" method="POST" >
         <section class="img">
             <img src="https://source.unsplash.com/collection/8874679/400x600" alt="">
         </section>
         <section class="details">
             <h3>editar professor</h3>
             {% include "teachers/fields.njk" %}
+            <input type="hidden" name="id" value="{{teacher.id}}">
             <button type="submit">Editar</button>           
         </section>
     </form>

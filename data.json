@@ -11,34 +11,24 @@
       "created_at": "2020-04-23T12:02:23.897Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "avatar_url": "http://www.facebook.com",
       "name": "Fredson Chaves Ribeiro",
-      "birth": "1995-01-29T00:00:00.000Z",
-      "specialty": "doutorado",
-      "type": "presencial",
+      "birth": "1995-01-28T00:00:00.000Z",
+      "specialty": "medio",
+      "type": "distancia",
       "acom": "Programação, Computação Básica",
       "created_at": "2020-04-27T12:24:18.609Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "avatar_url": "https://www.facebook.com",
-      "name": "MARCOS AURELIO FONSECA",
-      "birth": "1986-01-29T00:00:00.000Z",
-      "specialty": "mestrado",
-      "type": "presencial",
-      "acom": "Lingua Portuguesa",
-      "created_at": "2020-04-30T12:13:48.855Z"
-    },
-    {
-      "id": 4,
-      "avatar_url": "https://www.facebook.com",
-      "name": "MARCOS AURELIO",
-      "birth": "1986-01-28T00:00:00.000Z",
-      "specialty": "mestrado",
+      "name": "Luana Mendes",
+      "birth": "1980-01-27T00:00:00.000Z",
+      "specialty": "medio",
       "type": "distancia",
-      "acom": "Lingua Portuguesa",
-      "created_at": "2020-04-30T12:17:04.961Z"
+      "acom": "Lingua Portuguesa, Matemática",
+      "created_at": "2020-04-30T12:13:48.855Z"
     }
   ]
 }
