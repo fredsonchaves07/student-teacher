@@ -3,28 +3,18 @@
     {
       "id": 1,
       "avatar_url": "http://www.facebook.com",
-      "name": "FERNANDO MAIA",
-      "birth": "1978-04-06T00:00:00.000Z",
-      "specialty": "mestrado",
-      "type": "presencial",
-      "acom": "PROGRAMAÇÃO, MATEMÁTICA",
-      "created_at": "2020-04-23T12:02:23.897Z"
-    },
-    {
-      "id": "2",
-      "avatar_url": "http://www.facebook.com",
       "name": "Fredson Chaves Ribeiro",
-      "birth": "1995-01-28T00:00:00.000Z",
+      "birth": "1995-01-27T00:00:00.000Z",
       "specialty": "medio",
-      "type": "distancia",
+      "type": "presencial",
       "acom": "Programação, Computação Básica",
       "created_at": "2020-04-27T12:24:18.609Z"
     },
     {
-      "id": "3",
+      "id": 2,
       "avatar_url": "https://www.facebook.com",
       "name": "Luana Mendes",
-      "birth": "1980-01-27T00:00:00.000Z",
+      "birth": "1980-01-26T00:00:00.000Z",
       "specialty": "medio",
       "type": "distancia",
       "acom": "Lingua Portuguesa, Matemática",
