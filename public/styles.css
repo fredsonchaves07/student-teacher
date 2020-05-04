@@ -183,3 +183,20 @@ input::placeholder{
 }
 
 
+.table-container table{
+    border-spacing: 0;
+}
+
+.table-container thead{
+    text-align: left;
+}
+
+td, th{
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}

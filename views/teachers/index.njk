@@ -9,6 +9,7 @@
                 <tr>
                     <th>Teacher</th>
                     <th>Cursos</th>
+                    <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
@@ -16,6 +17,7 @@
                     <tr>
                         <td>{{teacher.name}}</td>
                         <td>{{teacher.acom}}</td>
+                        <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
                     </tr>
                 {% endfor %}
             </tbody>

@@ -5,7 +5,7 @@
 {% block content %}
     <div class="card">
         <section class="img">
-            <img src="https://source.unsplash.com/collection/8874679/400x600" alt="">
+            <img src="{{teacher.avatar_url}}" alt="">
         </section>
         <section class="details">
             <form action="/teachers?_method=PUT" method="POST" >
