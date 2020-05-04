@@ -176,4 +176,10 @@ input::placeholder{
     background-color: lightcoral;
 }
 
+.table-container{
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
 
