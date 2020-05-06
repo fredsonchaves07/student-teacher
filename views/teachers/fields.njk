@@ -31,10 +31,22 @@
                 <div>Grau de Especialidade:</div>
                 <div>
                     <select name="specialty" id="">
-                        <option value="medio">Ensino Médio Completo</option>
-                        <option value="superior">Enino Superior Completo</option>
-                        <option value="mestrado">Mestrado</option>
-                        <option value="doutorado">Doutorado</option>
+                        <option value="medio"
+                                {% if teacher.specialty == 'medio' %}
+                                    selected
+                               {% endif %}>Ensino Médio Completo</option>
+                        <option value="superior" 
+                                {% if teacher.specialty == 'superior' %}
+                                    selected
+                               {% endif %}>Enino Superior Completo</option>
+                        <option value="mestrado" 
+                                {% if teacher.specialty == 'mestrado' %}
+                                    selected
+                               {% endif %}>Mestrado</option>
+                        <option value="doutorado" 
+                               {% if teacher.specialty == 'doutorado' %}
+                                    selected
+                               {% endif %}>Doutorado</option>
                     </select>
                 </div>
             </div>

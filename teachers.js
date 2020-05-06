@@ -74,11 +74,11 @@ exports.edit = function(req, res){
     }
 
     let {birth} = foundTeachers
-    birth = Intl.DateTimeFormat('pt-BR').format((new Date(foundTeachers.birth)))
-
+    birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundTeachers.birth) + 10000000)
+    
     const teacher = {
         ...foundTeachers,
-        birth: utils.formatDate(birth)
+        birth: utils.formatDate(birth),
     }
     return res.render('teachers/edit', {teacher})
 }

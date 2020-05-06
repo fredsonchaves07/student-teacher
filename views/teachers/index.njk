@@ -15,8 +15,15 @@
             <tbody>
                 {% for teacher in teachers %}
                     <tr>
-                        <td>{{teacher.name}}</td>
-                        <td>{{teacher.acom}}</td>
+                        <td>
+                            <span style="background-image: url({{teacher.avatar_url}}"></span>
+                            {{teacher.name}}
+                        </td>
+                        <td>
+                            {% for acom in teacher.acom.split(',') %}
+                            <span>{{acom}}</span>
+                            {% endfor %}
+                        </td>
                         <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
                     </tr>
                 {% endfor %}

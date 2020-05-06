@@ -4,8 +4,8 @@
       "id": "1",
       "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Fredson Chaves Ribeiro",
-      "birth": "1995-01-25T00:00:00.000Z",
-      "specialty": "medio",
+      "birth": "1995-01-01T00:00:00.000Z",
+      "specialty": "doutorado",
       "type": "presencial",
       "acom": "Programação, Computação Básica",
       "created_at": "2020-04-27T12:24:18.609Z"
@@ -13,12 +13,12 @@
     {
       "id": "2",
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-      "name": "Luana Mendes",
-      "birth": "1980-01-25T00:00:00.000Z",
-      "specialty": "medio",
-      "type": "distancia",
-      "acom": "Lingua Portuguesa, Matemática",
-      "created_at": "2020-04-30T12:13:48.855Z"
+      "name": "Darlynne Jannayra",
+      "birth": "1988-08-29T00:00:00.000Z",
+      "specialty": "superior",
+      "type": "presencial",
+      "acom": "Arquitetura ",
+      "created_at": "2020-05-05T16:34:15.797Z"
     }
   ]
 }
