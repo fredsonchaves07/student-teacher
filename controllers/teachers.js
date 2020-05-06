@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data = require('./data.json')
-const utils = require('./utils.js')
+const data = require('../data.json')
+const utils = require('../utils.js')
 const Intl = require('intl')
 
 //create
