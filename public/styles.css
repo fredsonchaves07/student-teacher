@@ -164,7 +164,7 @@ input::placeholder{
     font-size: 14px;
     box-sizing: border-box;
     display: inline-block;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     cursor: pointer;
 }
 
@@ -174,7 +174,6 @@ input::placeholder{
 
 #form-delete button[type="submit"]{
     background-color: lightcoral;
-    margin-bottom: 24px;
 }
 
 .table-container{
@@ -234,7 +233,7 @@ tbody tr td:nth-child(2) span{
     font-size: 14px;
 }
 
-tbody tr td:last-child a{
+tbody tr td:last-child a, .table-container >a{
     background-color: var(--primary-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -242,6 +241,11 @@ tbody tr td:last-child a{
     color: white;
     font-size: 12px;
     border-radius: 4px;
+}
+
+.table-container >a{
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .table-container thead tr th:last-child, td:last-child{
