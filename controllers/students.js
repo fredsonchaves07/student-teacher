@@ -14,21 +14,17 @@ exports.post = (function(req, res){
         }
     }
 
-    let {avatar_url, name, birth, specialty, type, acom} = req.body
+    foundStudents = req.body
 
     const id = Number(data.students.length + 1)
-    const created_at = new Date()
-    birth = new Date(birth)
+    birth = new Date(req.body.birth)
+    ch = Number(req.body.ch)
 
     data.students.push({
         id,
-        avatar_url,
-        name,
+        ...foundStudents,
         birth,
-        specialty,
-        type,
-        acom,
-        created_at
+        ch
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
@@ -54,9 +50,7 @@ exports.show = function(req, res){
     const student = {
         ...foundStudents,
         age: utils.age(foundStudents.birth),
-        graduation: utils.graduation(foundStudents.specialty),
-        acom: foundStudents.acom.split(','),
-        created_at: Intl.DateTimeFormat('pt-BR').format(new Date(foundStudents.created_at))
+        graduation: utils.graduation(foundStudents.graduate),
     }
 
     return res.render('students/show', {student})

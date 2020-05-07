@@ -1,5 +1,15 @@
 {
-  "students":[],
+  "students": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=368&q=80",
+      "name": "Maria Gabriella",
+      "birth": "1987-04-03T00:00:00.000Z",
+      "email": "maria.gabriella@email.com",
+      "graduate": "8F",
+      "ch": 30,
+      "id": 1
+    }
+  ],
   "teachers": [
     {
       "id": "1",

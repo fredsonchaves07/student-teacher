@@ -21,7 +21,21 @@ exports.graduation = function(specialty){
         return 'Mestrado'
     } else if(specialty == 'doutorado'){
         return 'Doutorado'
-    }
+    } else if(specialty == '6F'){
+        return '6º Ano do Fundamental'
+    } else if(specialty == '7F'){
+        return '7º Ano do Fundamental'
+    } else if(specialty == '8F'){
+        return '8º Ano do Fundamental'
+    } else if(specialty == '9F'){
+        return '9º Ano do Fundamental'
+    } else if(specialty == '1M'){
+        return '1º Ano do Médio'
+    } else if(specialty == '2M'){
+        return '2º Ano do Médio'
+    } else if(specialty == '3M'){
+        return '3º Ano do Médio'
+    }  
 }
 
 exports.formatDate = function(date){
