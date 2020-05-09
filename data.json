@@ -5,9 +5,9 @@
       "name": "Maria Gabriella",
       "birth": "1987-04-03T00:00:00.000Z",
       "email": "maria.gabriella@email.com",
-      "graduate": "8F",
-      "ch": 30,
-      "id": 1
+      "graduate": "6F",
+      "ch": "30",
+      "id": "1"
     }
   ],
   "teachers": [
@@ -25,10 +25,10 @@
       "id": "2",
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
       "name": "Darlynne Jannayra",
-      "birth": "1988-08-29T00:00:00.000Z",
+      "birth": "1988-08-28T00:00:00.000Z",
       "specialty": "superior",
       "type": "presencial",
-      "acom": "Arquitetura ",
+      "acom": "Arquitetura, Edificações",
       "created_at": "2020-05-05T16:34:15.797Z"
     }
   ]
