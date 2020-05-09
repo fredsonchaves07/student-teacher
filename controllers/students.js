@@ -76,6 +76,7 @@ exports.edit = function(req, res){
     }
     return res.render('students/edit', {student})
 }
+
 //put
 exports.put = function(req, res){
     const {id} = req.body
