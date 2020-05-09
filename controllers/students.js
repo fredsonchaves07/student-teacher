@@ -69,7 +69,6 @@ exports.edit = function(req, res){
 
     let {birth} = foundStudents
     birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundStudents.birth) + 10000000)
-    console.log(birth)
     
     const student = {
         ...foundStudents,
