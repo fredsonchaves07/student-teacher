@@ -7,12 +7,21 @@
       "email": "maria.gabriella@email.com",
       "graduate": "6F",
       "ch": "30",
-      "id": "1"
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Elen Cruz",
+      "birth": "2004-03-30T00:00:00.000Z",
+      "email": "elen.cruz@email.com",
+      "graduate": "1M",
+      "ch": 20
     }
   ],
   "teachers": [
     {
-      "id": "1",
+      "id": 1,
       "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Fredson Chaves Ribeiro",
       "birth": "1995-01-01T00:00:00.000Z",
@@ -25,11 +34,21 @@
       "id": "2",
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
       "name": "Darlynne Jannayra",
-      "birth": "1988-08-28T00:00:00.000Z",
-      "specialty": "superior",
+      "birth": "1988-08-20T00:00:00.000Z",
+      "specialty": "medio",
       "type": "presencial",
       "acom": "Arquitetura, Edificações",
       "created_at": "2020-05-05T16:34:15.797Z"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "name": "Juliana Rios",
+      "birth": "1993-02-28T00:00:00.000Z",
+      "specialty": "superior",
+      "type": "presencial",
+      "acom": "Matemática",
+      "created_at": "2020-05-11T11:46:18.707Z"
     }
   ]
 }

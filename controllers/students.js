@@ -94,10 +94,13 @@ exports.put = function(req, res){
     }
 
     const student = {
+        id: Number(id),
         ...foundStudents,
         ...req.body,
         birth: new Date(req.body.birth)
     }
+
+    console.log('teste')
 
     data.students[index] = student
 

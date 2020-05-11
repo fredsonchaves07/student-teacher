@@ -99,10 +99,12 @@ exports.put = function(req, res){
     }
 
     const teacher = {
+        id: Number(id),
         ...foundTeachers,
-        ...req.body,
         birth: new Date(req.body.birth)
     }
+
+    console.log('Deu certo')
 
     data.teachers[index] = teacher
 
