@@ -3,7 +3,15 @@ const data = require('../data.json')
 const utils = require('../utils.js')
 const Intl = require('intl')
 
+//index
+exports.index = function(req, res){
+    return res.render('students/index', {students: data.students})
+}
 //create
+exports.create = function(req, res){
+    return res.render('stundents/create')
+}
+//post
 exports.post = (function(req, res){
     
     const keys = Object.keys(req.body)
@@ -16,7 +24,7 @@ exports.post = (function(req, res){
 
     foundStudents = req.body
 
-    const id = Number(data.students.length + 1)
+    const id = String(data.students.length + 1)
     birth = new Date(req.body.birth)
     ch = Number(req.body.ch)
 
@@ -131,9 +139,4 @@ exports.delete = function(req, res){
     })
 
 
-}
-
-//Index
-exports.index = function(req, res){
-    return res.render('students/index', {students: data.students})
 }

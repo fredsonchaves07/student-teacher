@@ -3,7 +3,18 @@ const data = require('../data.json')
 const utils = require('../utils.js')
 const Intl = require('intl')
 
+//index
+exports.index = function(req, res){
+    return res.render('teachers/index', {teachers: data.teachers})
+}
+
 //create
+exports.create = function(req, res){
+    return res.render('teachers/create')
+}
+
+
+//post
 exports.post = (function(req, res){
     
     const keys = Object.keys(req.body)
@@ -14,20 +25,16 @@ exports.post = (function(req, res){
         }
     }
 
-    let {avatar_url, name, birth, specialty, type, acom} = req.body
+    foundTeachers = req.body
 
-    const id = Number(data.teachers.length + 1)
-    const created_at = new Date()
-    birth = new Date(birth)
+    const id = String(data.teachers.length + 1)
+    const created_at = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+    birth = new Date(req.body.birth)
 
     data.teachers.push({
         id,
-        avatar_url,
-        name,
+        ...foundTeachers,
         birth,
-        specialty,
-        type,
-        acom,
         created_at
     })
 
@@ -99,14 +106,13 @@ exports.put = function(req, res){
     }
 
     const teacher = {
-        id: Number(id),
         ...foundTeachers,
         birth: new Date(req.body.birth)
     }
 
-    console.log('Deu certo')
-
     data.teachers[index] = teacher
+
+    console.log(teacher)
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if(err){
@@ -137,7 +143,3 @@ exports.delete = function(req, res){
 
 }
 
-//Index
-exports.index = function(req, res){
-    return res.render('teachers/index', {teachers: data.teachers})
-}
