@@ -85,7 +85,7 @@ exports.edit = function(req, res){
     
     const teacher = {
         ...foundTeachers,
-        birth: utils.formatDate(birth),
+        birth: utils.formatDate(birth)
     }
     return res.render('teachers/edit', {teacher})
 }
@@ -102,17 +102,19 @@ exports.put = function(req, res){
     })
 
     if(!foundTeachers){
-        return res.send('Teacher not found!')
+        return res.send('Student not found!')
     }
 
     const teacher = {
+        id: Number(id),
         ...foundTeachers,
+        ...req.body,
         birth: new Date(req.body.birth)
     }
 
-    data.teachers[index] = teacher
+    console.log('teste')
 
-    console.log(teacher)
+    data.teachers[index] = teacher
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
         if(err){

@@ -1,34 +1,34 @@
 {
   "students": [
     {
+      "id": "1",
       "avatar_url": "https://images.unsplash.com/photo-1558021211-6d1403321394?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=368&q=80",
       "name": "Maria Gabriella",
-      "birth": "1987-04-03T00:00:00.000Z",
-      "email": "maria.gabriella@email.com",
+      "birth": "1987-04-28T00:00:00.000Z",
+      "email": "teste@email.com",
       "graduate": "6F",
-      "ch": "30",
-      "id": 1
+      "ch": "20"
     },
     {
-      "id": 2,
+      "id": "2",
       "avatar_url": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Elen Cruz",
-      "birth": "2004-03-30T00:00:00.000Z",
+      "birth": "2004-03-04T00:00:00.000Z",
       "email": "elen.cruz@email.com",
-      "graduate": "1M",
-      "ch": 20
+      "graduate": "6F",
+      "ch": "20"
     }
   ],
   "teachers": [
     {
       "id": "1",
       "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "name": "Fredson Chaves Ribeiro",
-      "birth": "1995-01-01T00:00:00.000Z",
-      "specialty": "doutorado",
-      "type": "presencial",
+      "name": "Fredson Chaves",
+      "birth": "1995-01-30T00:00:00.000Z",
+      "specialty": "mestrado",
+      "type": "distancia",
       "acom": "Programação, Computação Básica",
-      "created_at": "2020-04-27T12:24:18.609Z"
+      "created_at": "2020-05-05T16:34:15.797Z"
     },
     {
       "id": "2",
