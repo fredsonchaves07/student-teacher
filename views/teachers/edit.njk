@@ -14,8 +14,22 @@
 
             <form id="form-delete"action="/teachers?_method=DELETE" method="POST">
                 <input type="hidden" name="id" value={{teacher.id}}>
-                <button type="submit">Deletar</button>
-            </form>        
+                <button type="submit" onclick="confirmation">Deletar</button>
+            </form>
+            <script>
+                function confirmation(){
+                    const formDelete = document.getElementById('form-delete')
+                    console.log(formDelete)
+                        formDelete = addEventListener('submit', function(event){
+                        console.log(formDelete)
+                        const confirmation = confirm('Deseja deletar?')
+                        if(!confirmation){
+                            event.preventDefault()
+                        }
+                        console.log(confirmation)
+                    })
+                }
+            </script>    
         </section>
     </div>
 {% endblock %}

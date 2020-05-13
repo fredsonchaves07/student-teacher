@@ -8,15 +8,6 @@
       "email": "teste@email.com",
       "graduate": "6F",
       "ch": "20"
-    },
-    {
-      "id": "2",
-      "avatar_url": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "name": "Elen Cruz",
-      "birth": "2004-03-04T00:00:00.000Z",
-      "email": "elen.cruz@email.com",
-      "graduate": "6F",
-      "ch": "20"
     }
   ],
   "teachers": [
@@ -39,26 +30,6 @@
       "type": "presencial",
       "acom": "Arquitetura, Edificações",
       "created_at": "2020-05-05T16:34:15.797Z"
-    },
-    {
-      "id": "3",
-      "avatar_url": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-      "name": "Juliana Rios",
-      "birth": "1993-02-28T00:00:00.000Z",
-      "specialty": "superior",
-      "type": "presencial",
-      "acom": "Matemática",
-      "created_at": "2020-05-11T11:46:18.707Z"
-    },
-    {
-      "id": "4",
-      "avatar_url": "https://images.unsplash.com/photo-1562693315-23c0b35cacd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "name": "Gabriel Mendes",
-      "birth": "1987-04-23T00:00:00.000Z",
-      "specialty": "mestrado",
-      "type": "presencial",
-      "acom": "Filosofia",
-      "created_at": "2020-05-12T09:25:04.088Z"
     }
   ]
 }
