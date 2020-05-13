@@ -7,10 +7,12 @@ const Intl = require('intl')
 exports.index = function(req, res){
     return res.render('students/index', {students: data.students})
 }
+
 //create
 exports.create = function(req, res){
     return res.render('stundents/create')
 }
+
 //post
 exports.post = (function(req, res){
     
@@ -63,6 +65,7 @@ exports.show = function(req, res){
 
     return res.render('students/show', {student})
 }
+
 //edit
 exports.edit = function(req, res){
     const {id} = req.params
@@ -137,6 +140,4 @@ exports.delete = function(req, res){
 
         return res.redirect('/students')
     })
-
-
 }

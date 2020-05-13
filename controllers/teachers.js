@@ -13,7 +13,6 @@ exports.create = function(req, res){
     return res.render('teachers/create')
 }
 
-
 //post
 exports.post = (function(req, res){
     
@@ -68,6 +67,7 @@ exports.show = function(req, res){
 
     return res.render('teachers/show', {teacher})
 }
+
 //edit
 exports.edit = function(req, res){
     const {id} = req.params
@@ -89,6 +89,7 @@ exports.edit = function(req, res){
     }
     return res.render('teachers/edit', {teacher})
 }
+
 //put
 exports.put = function(req, res){
     const {id} = req.body
@@ -141,7 +142,5 @@ exports.delete = function(req, res){
 
         return res.redirect('/teachers')
     })
-
-
 }
 
