@@ -81,8 +81,8 @@ exports.edit = function(req, res){
     }
 
     let {birth} = foundTeachers
-    birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundTeachers.birth) + 10000000)
-    
+    birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundTeachers.birth) + 20000000)
+
     const teacher = {
         ...foundTeachers,
         birth: utils.formatDate(birth)
@@ -112,8 +112,6 @@ exports.put = function(req, res){
         ...req.body,
         birth: new Date(req.body.birth)
     }
-
-    console.log('teste')
 
     data.teachers[index] = teacher
 

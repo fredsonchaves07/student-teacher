@@ -79,7 +79,7 @@ exports.edit = function(req, res){
     }
 
     let {birth} = foundStudents
-    birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundStudents.birth) + 10000000)
+    birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundStudents.birth) + 20000000)
     
     const student = {
         ...foundStudents,
