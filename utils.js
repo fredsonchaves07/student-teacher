@@ -12,28 +12,28 @@ exports.age = function(birth){
     return age
 }
 
-exports.graduation = function(specialty){
-    if(specialty == 'medio'){
+exports.graduation = function(graduate){
+    if(graduate == 'medio'){
         return 'Ensino Médio'
-    } else if(specialty == 'superior'){
+    } else if(graduate == 'superior'){
         return 'Ensino Superior'
-    } else if(specialty == 'mestrado'){
+    } else if(graduate == 'mestrado'){
         return 'Mestrado'
-    } else if(specialty == 'doutorado'){
+    } else if(graduate == 'doutorado'){
         return 'Doutorado'
-    } else if(specialty == '6F'){
+    } else if(graduate == '6F'){
         return '6º Ano do Fundamental'
-    } else if(specialty == '7F'){
+    } else if(graduate == '7F'){
         return '7º Ano do Fundamental'
-    } else if(specialty == '8F'){
+    } else if(graduate == '8F'){
         return '8º Ano do Fundamental'
-    } else if(specialty == '9F'){
+    } else if(graduate == '9F'){
         return '9º Ano do Fundamental'
-    } else if(specialty == '1M'){
+    } else if(graduate == '1M'){
         return '1º Ano do Médio'
-    } else if(specialty == '2M'){
+    } else if(graduate == '2M'){
         return '2º Ano do Médio'
-    } else if(specialty == '3M'){
+    } else if(graduate == '3M'){
         return '3º Ano do Médio'
     }  
 }

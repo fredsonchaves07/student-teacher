@@ -30,21 +30,21 @@
             <div class="item">
                 <div>Grau de Especialidade:</div>
                 <div>
-                    <select name="specialty" id="">
+                    <select name="graduation" id="">
                         <option value="medio"
-                                {% if teacher.specialty == 'medio' %}
+                                {% if teacher.graduation == 'medio' %}
                                     selected
                                {% endif %}>Ensino Médio Completo</option>
                         <option value="superior" 
-                                {% if teacher.specialty == 'superior' %}
+                                {% if teacher.graduation == 'superior' %}
                                     selected
                                {% endif %}>Enino Superior Completo</option>
                         <option value="mestrado" 
-                                {% if teacher.specialty == 'mestrado' %}
+                                {% if teacher.graduation == 'mestrado' %}
                                     selected
                                {% endif %}>Mestrado</option>
                         <option value="doutorado" 
-                               {% if teacher.specialty == 'doutorado' %}
+                               {% if teacher.graduation == 'doutorado' %}
                                     selected
                                {% endif %}>Doutorado</option>
                     </select>

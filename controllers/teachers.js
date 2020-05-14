@@ -60,7 +60,7 @@ exports.show = function(req, res){
     const teacher = {
         ...foundTeachers,
         age: utils.age(foundTeachers.birth),
-        graduation: utils.graduation(foundTeachers.specialty),
+        graduation: utils.graduation(foundTeachers.graduation),
         acom: foundTeachers.acom.split(','),
         created_at: Intl.DateTimeFormat('pt-BR').format(new Date(foundTeachers.created_at))
     }

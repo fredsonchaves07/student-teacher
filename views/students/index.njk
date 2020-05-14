@@ -25,7 +25,36 @@
                             <span>{{student.email}}</span>
                         </td>
                         <td>
-                            <span>{{student.graduate}}</span>
+                            <span>
+                                {% if student.graduation == '6F' %}
+                                    6º Ano do fundamental
+                                {% endif %}
+
+                                {% if student.graduation == '7F' %}
+                                    7º Ano do fundamental
+                                {% endif %}
+
+                                {% if student.graduation == '8F' %}
+                                    8º Ano do fundamental
+                                {% endif %}
+
+                                {% if student.graduation == '9F' %}
+                                    9º Ano do fundamental
+                                {% endif %}
+
+                                {% if student.graduation == '1M' %}
+                                    1º Ano do Médio
+                                {% endif %}
+
+                                {% if student.graduation == '2M' %}
+                                    2º Ano do Médio
+                                {% endif %}
+
+                                {% if student.graduation == '3M' %}
+                                    3º Ano do Médio
+                                {% endif %}  
+
+                            </span>
                         </td>
                         <td><a href="/students/{{student.id}}">Ver</a></td>
                     </tr>

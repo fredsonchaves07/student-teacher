@@ -6,7 +6,7 @@
       "name": "Maria Gabriella",
       "birth": "1987-04-28T00:00:00.000Z",
       "email": "teste@email.com",
-      "graduate": "6F",
+      "graduation": "2M",
       "ch": "20"
     }
   ],
@@ -16,7 +16,7 @@
       "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Fredson Chaves",
       "birth": "1995-01-30T00:00:00.000Z",
-      "specialty": "mestrado",
+      "graduation": "mestrado",
       "type": "distancia",
       "acom": "Programação, Computação Básica",
       "created_at": "2020-05-05T16:34:15.797Z"
@@ -26,7 +26,7 @@
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
       "name": "Darlynne Jannayra",
       "birth": "1988-08-18T00:00:00.000Z",
-      "specialty": "superior",
+      "graduation": "medio",
       "type": "presencial",
       "acom": "Arquitetura, Edificações",
       "created_at": "2020-05-05T16:34:15.797Z"
@@ -36,7 +36,7 @@
       "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
       "name": "Caroline",
       "birth": "1909-04-01T00:00:00.000Z",
-      "specialty": "superior",
+      "graduation": "superior",
       "type": "presencial",
       "acom": "nada",
       "created_at": "2020-05-14T09:20:01.845Z"

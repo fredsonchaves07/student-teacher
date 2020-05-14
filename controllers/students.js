@@ -60,9 +60,8 @@ exports.show = function(req, res){
     const student = {
         ...foundStudents,
         age: utils.age(foundStudents.birth),
-        graduation: utils.graduation(foundStudents.graduate),
+        graduation: utils.graduation(foundStudents.graduation),
     }
-
     return res.render('students/show', {student})
 }
 
