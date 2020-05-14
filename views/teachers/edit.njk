@@ -16,15 +16,7 @@
                 <input type="hidden" name="id" value={{teacher.id}}>
                 <button type="submit">Deletar</button>
             </form>
-            <script>
-                const formDelete = document.getElementById('form-delete')
-                formDelete.addEventListener('submit', function(event){
-                    const confirmation = confirm('Deseja deletar?')
-                    if(!confirmation){
-                        event.preventDefault()
-                    }
-                })
-            </script>    
-        </section>
+                {% include "confirmation.njk" %}
+            </section>
     </div>
 {% endblock %}
