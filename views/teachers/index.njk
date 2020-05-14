@@ -18,8 +18,8 @@
                             {{teacher.name}}
                         </td>
                         <td>
-                            {% for acom in teacher.acom.split(',') %}
-                            <span>{{acom}}</span>
+                            {% for courses in teacher.courses.split(',') %}
+                            <span>{{courses}}</span>
                             {% endfor %}
                         </td>
                         <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
