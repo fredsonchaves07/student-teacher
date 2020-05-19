@@ -153,26 +153,29 @@ input::placeholder{
     font-size: 14px;
 }
 
-.button, button[type="submit"]{
+.button-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+button, .details .button{
     text-align: center;
     width: 100%;
     font-weight: bold;
     padding: 8px 32px;
     border-radius: 4px;
-    background-color: var(--primary-color);
     color: white;
     font-size: 14px;
-    box-sizing: border-box;
-    display: inline-block;
     margin-bottom: 24px;
     cursor: pointer;
 }
 
-.button{
-    text-decoration: none;
+.button-edit{
+    background-color: var(--primary-color);
 }
 
-#form-delete button[type="submit"]{
+.button-delete{
     background-color: lightcoral;
 }
 
