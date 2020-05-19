@@ -169,6 +169,9 @@ button, .details .button{
     font-size: 14px;
     margin-bottom: 24px;
     cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .button-edit{
