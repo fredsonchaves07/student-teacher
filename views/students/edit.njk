@@ -12,13 +12,15 @@
                 <h3>editar aluno</h3>
                 {% include "students/fields.njk" %}
                 <input type="hidden" name="id" value="{{student.id}}">
-                <button type="submit">Salvar</button> 
             </form>
 
-            <form id="form-delete"action="/students?_method=DELETE" method="POST">
+            <form id="delete"action="/students?_method=DELETE" method="POST">
                 <input type="hidden" name="id" value={{student.id}}>
-                <button type="submit">Deletar</button>
             </form>
+                <div class="button-form">
+                <button type="submit" form="edit" class="button-edit">Salvar</button>
+                <button type="submit" form="delete" class="button-delete">Deletar</button>
+            </div>
             {% include "confirmation.njk" %}      
         </section>
     </div>
