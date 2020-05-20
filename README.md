@@ -3,9 +3,9 @@
 </h1>
 
 ## :link: Index
-- [About](#-about)
-- [Features](#-features)
-- [Donwload](#-download)
+- [About](#bookmark-about)
+- [Features](#computer-features)
+- [Donwload](#card_index_dividers-download)
 
 
 ## :bookmark: About
