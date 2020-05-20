@@ -20,7 +20,7 @@ Academic Manager is a student and teacher management system
 
 ## :card_index_dividers: Download
 ```bash
-  $ git clone
+  $ git clone https://github.com/fredsonchaves07/student-teacher.git
   $ cd student-teacher
   $ npm install
   $ npm start
