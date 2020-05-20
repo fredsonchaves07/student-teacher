@@ -3,9 +3,9 @@
 </h1>
 
 ## :link: Index
-- [About](#-about)
-- [Features](#-features)
-- [Donwload](#-download)
+- [About](#-About)
+- [Features](#-Features)
+- [Donwload](#-Download)
 
 
 ## :bookmark: About
