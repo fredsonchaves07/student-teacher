@@ -1,26 +1,24 @@
 <h1 align="center">
-    :books: Academic Manager
+    :mortar_board: :books: Academic Manager
 </h1>
 
-## Indice
-- [Sobre](#-sobre)
+## :link: Index
+- [About](#-about)
+- [Features](#-features)
+- [Donwload](#-download)
 
 
-## About
+## :bookmark: About
 
-Academic Manager é um sistema de gerenciamento de professores e alunos
+Academic Manager is a student and teacher management system
 
----
-
-## Tecnologias
+## :computer: Features
 - Node JS
 - ExpressJS
 - HTML5
 - CSS3
 
----
-
-## Como baixar o projeto
+## :card_index_dividers: Download
 ```bash
   $ git clone
   $ cd student-teacher
@@ -28,5 +26,5 @@ Academic Manager é um sistema de gerenciamento de professores e alunos
   $ npm start
 ```
 ---
-Desenvolvido por Fredson Chaves
+Developed :blue_heart: by  Fredson Chaves
 
