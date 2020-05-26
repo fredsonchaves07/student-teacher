@@ -30,8 +30,8 @@ Academic Manager is a student and teacher management system
 
 ## :bug: Issues
 
-I would love to review your pull request! Feel free to file a new [issue](https://github.com/fredsonchaves07/student-teacher/issues)
- 
+I would love to review your pull request! Open a new [issue](https://github.com/fredsonchaves07/student-teacher/issues)
+
 
 ## :handshake: Contribution
 
