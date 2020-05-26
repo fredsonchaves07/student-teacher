@@ -18,7 +18,7 @@ Academic Manager is a student and teacher management system
 - HTML5
 - CSS3
 
-## :card_index_dividers: Download
+## :card_index_dividers: Getting Started
 ```bash
   $ git clone https://github.com/fredsonchaves07/student-teacher.git
   $ cd student-teacher
