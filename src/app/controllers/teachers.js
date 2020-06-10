@@ -1,9 +1,10 @@
 const utils = require('../../lib/utils')
 const Intl = require('intl')
+const db = require('../../config/db')
 
 module.exports = {
     index(req, res) {
-        return res.render('teachers/index', { teachers: data.teachers })
+        return res.render('teachers/index.njk')
     },
     create(req, res) {
         return res.render('teachers/create')
@@ -16,26 +17,40 @@ module.exports = {
                 return res.send('Please, fill all fieds')
             }
         }
-    
-        foundTeachers = req.body
-    
-        const id = String(data.teachers.length + 1)
-        const created_at = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
-        birth = new Date(req.body.birth)
-    
-        data.teachers.push({
-            id,
-            ...foundTeachers,
-            birth,
-            created_at
+
+        const query = `
+            INSERT INTO teachers (
+                avatar_url,
+                name,
+                birth,
+                graduation,
+                type,
+                courses,
+                created_at
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7)
+            RETURNING id
+        `
+
+        const values = [
+            req.body.avatar_url,
+            req.body.name,
+            req.body.birth,
+            req.body.graduation,
+            req.body.type,
+            req.body.courses,
+            new Date().toISOString(),
+        ]
+
+        console.log(new Date().toISOString())
+        console.log(req.body.birth)
+
+        db.query(query, values, function(err, results){
+            console.log(err)
+            console.log(results)
+            return
         })
     
-        fs.writeFile('data.json', JSON.stringify(data, null, 2), function (err) {
-            if (err) {
-                return res.send('Write file error!')
-            }
-            return res.redirect('/teachers')
-        })
+        return
     },
     show(req, res) {
         const { id } = req.params

@@ -1,4 +1,5 @@
-modules.exports = {
+
+module.exports = {
     age(){
         data = new Date()
         birth = new Date(birth)
@@ -13,7 +14,7 @@ modules.exports = {
         return age
     },
 
-    graduation(){
+    graduation(graduate){
         if(graduate == 'medio'){
             return 'Ensino Médio'
         } else if(graduate == 'superior'){
@@ -39,7 +40,7 @@ modules.exports = {
         }  
     },
 
-    formatDate(){
+    formatDate(date){
         return date.split('/').reverse().join('-')
     }
 }

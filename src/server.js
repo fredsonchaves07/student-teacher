@@ -7,7 +7,7 @@ const server = express()
 
 server.set('view engine', 'njk')
 
-nunjucks.configure('src/views', {
+nunjucks.configure('src/app/views', {
     express: server
 })
 
