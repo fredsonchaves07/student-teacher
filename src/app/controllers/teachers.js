@@ -45,9 +45,11 @@ module.exports = {
         console.log(req.body.birth)
 
         db.query(query, values, function(err, results){
-            console.log(err)
-            console.log(results)
-            return
+            if(err){
+                return res.send('Databse not conected')
+            }
+
+            return res.redirect(`teachers/${results.rows[0].id}`)
         })
     
         return
