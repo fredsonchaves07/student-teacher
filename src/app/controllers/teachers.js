@@ -1,14 +1,19 @@
 const utils = require('../../lib/utils')
 const Intl = require('intl')
-const db = require('../../config/db')
+
+const Teacher = require('../models/Teacher')
 
 module.exports = {
     index(req, res) {
-        return res.render('teachers/index.njk')
+        Teacher.all(function(teachers){
+            return res.render('teachers/index', {teachers})
+        })
     },
+
     create(req, res) {
         return res.render('teachers/create')
     },
+
     post(req, res) {
         const keys = Object.keys(req.body)
 
@@ -18,42 +23,11 @@ module.exports = {
             }
         }
 
-        const query = `
-            INSERT INTO teachers (
-                avatar_url,
-                name,
-                birth,
-                graduation,
-                type,
-                courses,
-                created_at
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7)
-            RETURNING id
-        `
-
-        const values = [
-            req.body.avatar_url,
-            req.body.name,
-            req.body.birth,
-            req.body.graduation,
-            req.body.type,
-            req.body.courses,
-            new Date().toISOString(),
-        ]
-
-        console.log(new Date().toISOString())
-        console.log(req.body.birth)
-
-        db.query(query, values, function(err, results){
-            if(err){
-                return res.send('Databse not conected')
-            }
-
-            return res.redirect(`teachers/${results.rows[0].id}`)
+        Teacher.create(req.body, function(teacher){
+            return res.redirect(`teachers/${teacher.id}`)
         })
-    
-        return
     },
+
     show(req, res) {
         const { id } = req.params
 
@@ -75,12 +49,9 @@ module.exports = {
     
         return res.render('teachers/show', { teacher })
     },
+
     edit(req, res) {
         const { id } = req.params
-
-        const foundTeachers = data.teachers.find(function (teachers) {
-            return teachers.id == id
-        })
     
         if (!foundTeachers) {
             return res.send('Teacher not found!')
