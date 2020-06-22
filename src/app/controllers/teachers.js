@@ -24,7 +24,7 @@ module.exports = {
         }
 
         Teacher.create(req.body, function(teacher){
-            return res.redirect(`teachers/${teacher.id}`)
+            return res.redirect('/teachers')
         })
     },
 
