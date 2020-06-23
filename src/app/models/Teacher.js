@@ -41,5 +41,19 @@ module.exports = {
 
             callback(results.rows[0])
         })
+    },
+
+    find(id, callback){
+        const query = `SELECT * FROM teachers WHERE teachers.id = $1`
+
+        const value = [id]
+
+        db.query(query, value, function(err, results){
+            if(err){
+                return res.send('Database not conected')
+            }
+
+            callback(results.rows[0])
+        })
     }
 }

@@ -1,6 +1,6 @@
 
 module.exports = {
-    age(){
+    age(birth){
         data = new Date()
         birth = new Date(birth)
     

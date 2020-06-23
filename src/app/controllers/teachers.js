@@ -29,25 +29,20 @@ module.exports = {
     },
 
     show(req, res) {
-        const { id } = req.params
+        
+        Teacher.find(req.params.id, function(teacher){
+            
+            if(!teacher){
+                return res.send('Teacher not found!')
+            }
 
-        const foundTeachers = data.teachers.find(function (teachers) {
-            return teachers.id == id
+            teacher.age = utils.age(teacher.birth),
+            teacher.graduation = utils.graduation(teacher.graduation),
+            teacher.courses = teacher.courses.split(','),
+            teacher.created_at = Intl.DateTimeFormat('pt-BR').format(new Date(teacher.created_at))
+
+            return res.render('teachers/show', { teacher })
         })
-    
-        if (!foundTeachers) {
-            return res.send('Teacher not found!')
-        }
-    
-        const teacher = {
-            ...foundTeachers,
-            age: utils.age(foundTeachers.birth),
-            graduation: utils.graduation(foundTeachers.graduation),
-            courses: foundTeachers.courses.split(','),
-            created_at: Intl.DateTimeFormat('pt-BR').format(new Date(foundTeachers.created_at))
-        }
-    
-        return res.render('teachers/show', { teacher })
     },
 
     edit(req, res) {
