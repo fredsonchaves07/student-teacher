@@ -1,3 +1,4 @@
+const Intl = require('intl')
 
 module.exports = {
     age(birth){
@@ -41,6 +42,7 @@ module.exports = {
     },
 
     formatDate(date){
+        date = Intl.DateTimeFormat('pt-BR').format(Date.parse(date) + 20000000)
         return date.split('/').reverse().join('-')
     }
 }

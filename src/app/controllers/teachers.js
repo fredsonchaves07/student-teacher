@@ -46,20 +46,16 @@ module.exports = {
     },
 
     edit(req, res) {
-        const { id } = req.params
-    
-        if (!foundTeachers) {
-            return res.send('Teacher not found!')
-        }
-    
-        let { birth } = foundTeachers
-        birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundTeachers.birth) + 20000000)
-    
-        const teacher = {
-            ...foundTeachers,
-            birth: utils.formatDate(birth)
-        }
-        return res.render('teachers/edit', { teacher })
+       Teacher.find(req.params.id, function (teacher){
+
+           if(!teacher){
+               return res.send('Teacher not fountd!')
+           }
+
+           teacher.birth = utils.formatDate(teacher.birth)
+           return res.render('teachers/edit', {teacher})
+
+       })
     },
     put(req, res) {
         const { id } = req.body
