@@ -57,36 +57,10 @@ module.exports = {
 
        })
     },
+
     put(req, res) {
-        const { id } = req.body
-        let index = 0
-    
-        const foundTeachers = data.teachers.find(function (teachers, foundIndex) {
-            if (id == teachers.id) {
-                index = foundIndex
-                return true
-            }
-        })
-    
-        if (!foundTeachers) {
-            return res.send('Student not found!')
-        }
-    
-        const teacher = {
-            id: Number(id),
-            ...foundTeachers,
-            ...req.body,
-            birth: new Date(req.body.birth)
-        }
-    
-        data.teachers[index] = teacher
-    
-        fs.writeFile("data.json", JSON.stringify(data, null, 2), function (err) {
-            if (err) {
-                return res.send("Write file error!")
-            }
-    
-            return res.redirect(`/teachers/${id}`)
+        Teacher.update(req.body, function(){
+            return res.redirect(`/teachers`)
         })
     },
     delete(req, res) {
