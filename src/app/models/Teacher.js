@@ -4,7 +4,7 @@ module.exports = {
     all(callback){
         db.query(`SELECT * FROM teachers`, function(err, results){
             if(err){
-                return res.send(`Database error!`)
+                throw `Database Error! ${err}`
             }
             callback(results.rows)
         })
@@ -36,7 +36,7 @@ module.exports = {
 
         db.query(query, values, function(err, results){
             if(err){
-                return res.send('Databse not conected')
+                throw `Database Error! ${err}`
             }
 
             callback(results.rows[0])
@@ -50,7 +50,7 @@ module.exports = {
 
         db.query(query, value, function(err, results){
             if(err){
-                return res.send('Database not conected')
+                throw `Database Error! ${err}`
             }
 
             callback(results.rows[0])
