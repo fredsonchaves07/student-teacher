@@ -78,9 +78,26 @@ module.exports = {
             data.id
         ]
 
-        db.query(query, values, (err, results) =>{
+        db.query(query, values, (err) =>{
             if(err){
                 throw `Database error! ${err}` 
+            }
+
+            callback()
+        })
+    },
+
+    delete(id, callback){
+        const query = `
+            DELETE FROM teachers
+            WHERE teachers.id = $1
+        `
+
+        const value = [id]
+
+        db.query(query, value, (err) =>{
+            if(err){
+                throw `Database Error! ${err}`
             }
 
             callback()
