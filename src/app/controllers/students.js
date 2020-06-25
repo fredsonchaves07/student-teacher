@@ -1,5 +1,4 @@
 const utils = require('../../lib/utils')
-const Intl = require('intl')
 const Student = require('../models/Student')
 
 module.exports = {
@@ -51,65 +50,17 @@ module.exports = {
             student.birth = utils.formatDate(student.birth)
 
             return res.render('students/edit', {student})
-        })
-
-        /*let {birth} = foundStudents
-        birth = Intl.DateTimeFormat('pt-BR').format(Date.parse(foundStudents.birth) + 20000000)
-        
-        const student = {
-            ...foundStudents,
-            birth: utils.formatDate(birth),
-        }*/
-        
+        }) 
     },
 
     put(req, res) {
-        const {id} = req.body
-        let index = 0
-    
-        const foundStudents = data.students.find(function(students, foundIndex){
-            if(id == students.id){
-                index = foundIndex
-                return true
-            }
-        })
-    
-        if(!foundStudents){
-            return res.send('Student not found!')
-        }
-    
-        const student = {
-            id: Number(id),
-            ...foundStudents,
-            ...req.body,
-            birth: new Date(req.body.birth)
-        }
-    
-        console.log('teste')
-    
-        data.students[index] = student
-    
-        fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-            if(err){
-                return res.send("Write file error!")
-            }
-    
-            return res.redirect(`/students/${id}`)
+        Student.update(req.body, function(){
+            return res.redirect(`/students`)
         })
     },
+
     delete(req, res) {
-        const {id} = req.body
-        const filteredStudents = data.students.filter(function(student){
-            return student.id != id
-        })
-    
-        data.students = filteredStudents
-    
-        fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
-            if(err){
-                return res.send("Write file error!")
-            }
-    
+        Student.delete(req.body.id, function(){
             return res.redirect('/students')
         })
     },
