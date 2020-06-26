@@ -8,7 +8,7 @@
 - [Getting Started](#card_index_dividers-getting-started)
 - [Issues](#bug-issues)
 - [Contribution](#handshake-contribution)
-- [License](balance_scale-License)
+- [License](#balance_scale-License)
 
 
 ## :bookmark: About
