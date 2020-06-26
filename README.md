@@ -8,6 +8,7 @@
 - [Getting Started](#card_index_dividers-getting-started)
 - [Issues](#bug-issues)
 - [Contribution](#handshake-contribution)
+- [License](balance_scale-License)
 
 
 ## :bookmark: About
@@ -37,6 +38,10 @@ I would love to review your pull request! Open a new [issue](https://github.com/
 
 Feel free to contribute to the project. I am open for suggestions.
 Click [here](https://github.com/fredsonchaves07/student-teacher/issues) to open a new issue 	:smile:
+
+## :balance_scale: License
+
+Released in 2020. This project is under the [MIT license](https://github.com/fredsonchaves07/student-teacher/blob/features/LICENSE).
 
 ---
 Developed :blue_heart: by  Fredson Chaves
