@@ -11,6 +11,7 @@
                 <tr>
                     <th>Teacher</th>
                     <th>Cursos</th>
+                    <th>Alunos</th>
                     <th>Ação</th>
                 </tr>
             </thead>
@@ -26,6 +27,7 @@
                             <span>{{courses}}</span>
                             {% endfor %}
                         </td>
+                        <td>{{teacher.total_students}}</td>
                         <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
                     </tr>
                 {% endfor %}

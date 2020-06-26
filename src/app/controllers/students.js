@@ -10,7 +10,10 @@ module.exports = {
     },
 
     create(req, res) {
-        return res.render('students/create')
+        Student.teacherSelectOptions(function(teacherOptions){
+            return res.render('students/create', {teacherOptions})
+        })
+        
     },
 
     post(req, res) {
@@ -49,7 +52,9 @@ module.exports = {
 
             student.birth = utils.formatDate(student.birth)
 
-            return res.render('students/edit', {student})
+            Student.teacherSelectOptions(function(teacherOptions){
+                return res.render('students/edit', {student, teacherOptions})
+            })
         }) 
     },
 
