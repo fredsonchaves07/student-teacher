@@ -161,7 +161,7 @@ input::placeholder{
     grid-gap: 10px;
 }
 
-button, .details .button{
+button, .button{
     margin-top: 18px;
     text-align: center;
     width: 100%;
@@ -242,7 +242,7 @@ tbody tr td:nth-child(2) span{
     font-size: 14px;
 }
 
-tbody tr td:last-child a, .table-container >a{
+tbody tr td:last-child a{
     background-color: var(--primary-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -261,4 +261,26 @@ tbody tr td:last-child a, .table-container >a{
     text-align: center;
 }
 
+.table-container .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.table-container .header form{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.table-container .header a{
+    width: 100px;
+}
+
+.table-container .header form input{
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    box-sizing: border-box;
+}
 
