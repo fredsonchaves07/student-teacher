@@ -17,24 +17,17 @@ module.exports = {
             limit,
             offset,
             callback(teachers){
+                const pagination = {
+                    filter,
+                    total,
+                    page
+                }
+
                 return res.render('teachers/index', {teachers, filter})
             }
         }
 
         Teacher.paginate(params)
-
-        /*if(filter){
-            Teacher.findBy(filter, function(teachers){
-                return res.render('teachers/index', {teachers})
-            })
-
-        } else{
-            Teacher.all(function(teachers){
-                console.log('Deu Certo')
-                return res.render('teachers/index', {teachers})
-                
-            })
-        }*/
     },
 
     create(req, res) {
